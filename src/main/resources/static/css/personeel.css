@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+}
+
+dd,dt {
+    margin-left: 0;
+}
+
+dt {
+    margin-top: 0.5em;
+}
+
+dd {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    color: darkcyan;
+    font-weight: bold;
+    padding-left: 0.5em;
+    vertical-align: middle;
+}
+
+nav li a:hover {
+    color: dimgrey;
+}
+
+.fout {
+    color: red;
+}
+
+.boodschap {
+    color: darkcyan;
+}

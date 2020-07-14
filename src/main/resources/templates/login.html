@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Inloggen</title>
+    <link rel="stylesheet" th:href="@{/css/personeel.css}">
+</head>
+<body>
+<a th:href="@{/}">Menu</a>
+<h1>Inloggen</h1>
+<p>Om deze pagina te bekijken moet u ingelogd zijn:</p>
+<form th:action="@{/login}" method="post">
+    <input name="username" required autofocus placeholder="Emailadres">
+    <input name="password" type="password" required placeholder="Paswoord">
+    <button>Inloggen</button>
+</form>
+
+<div th:if="${param.error}" class="fout">Verkeerde gebruikersnaam of
+    paswoord</div>
+</body>
+</html>
